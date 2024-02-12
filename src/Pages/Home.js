@@ -17,6 +17,7 @@ function Home() {
         <div className='d-flex main-div row home-div  mx-auto justify-content-center align-items-center'>
             <img className='vector-1' src={vector1}/>
             {/* <img src={vector2} className='vector-2' /> */}
+            <div className='vector-2'></div>
             <div className='d-flex col-12 mt-5 pt-4 pt-lg-0 mt-lg-0 img-div col-lg-6 p-0  justify-content-center justify-content-lg-end align-items-center align-items-lg-end'>
                 <img className='home-img ' src={homeImg} />
             </div>

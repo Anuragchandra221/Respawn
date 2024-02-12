@@ -107,16 +107,15 @@ h2{
     .vector-2{
         /* vector */
         /* vector */
-
+        display: block;
         position: absolute;
-        left: -278.41px;
-        top: 1094px;
-
-        background: #480D5E;
-        filter: blur(200px);
-        transform: rotate(46.6deg);
-
-    
+        top: 1066px;
+        border-radius: 83% 17% 86% 14% / 49% 55% 45% 51%;
+        height: 1091px;
+        width: 400px;
+        background-color: #480d5e;
+        filter: blur(88px);
+        left: -272px;
     }
     .main-div{
         height: 100%;
