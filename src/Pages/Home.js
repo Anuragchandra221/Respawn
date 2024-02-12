@@ -4,6 +4,7 @@ import Division from '../Components/Division'
 import Highlights from '../Components/Highlights'
 import homeImg from "../Assets/Images/Home.png"
 import vector1 from "../Assets/Images/vector(2).png"
+import vector2 from "../Assets/Images/vector.svg"
 import Sponsors from '../Components/Sponsors'
 import Footer from '../Components/Footer'
 import "./Home.css"
@@ -15,6 +16,7 @@ function Home() {
         <Navbar/>
         <div className='d-flex main-div row home-div  mx-auto justify-content-center align-items-center'>
             <img className='vector-1' src={vector1}/>
+            {/* <img src={vector2} className='vector-2' /> */}
             <div className='d-flex col-12 mt-5 pt-4 pt-lg-0 mt-lg-0 img-div col-lg-6 p-0  justify-content-center justify-content-lg-end align-items-center align-items-lg-end'>
                 <img className='home-img ' src={homeImg} />
             </div>

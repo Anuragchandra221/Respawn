@@ -104,6 +104,20 @@ h2{
         filter: blur(200px);
 
     }
+    .vector-2{
+        /* vector */
+        /* vector */
+
+        position: absolute;
+        left: -278.41px;
+        top: 1094px;
+
+        background: #480D5E;
+        filter: blur(200px);
+        transform: rotate(46.6deg);
+
+    
+    }
     .main-div{
         height: 100%;
         width: 100%;
