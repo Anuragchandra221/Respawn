@@ -12,6 +12,7 @@
     font-size: 1.3em;
     color: var(--subtext);
     opacity: 0.67;
+    transition-delay: 400ms;
 }
 .vector-1{
 
@@ -38,6 +39,7 @@
     border: none;
     background-color: var(--button);
     color: var(--para);
+    transition-delay: 900ms;
 }
 .main-div{
     height: 100%;
@@ -62,12 +64,38 @@ h2{
 .para{
     color: var(--para);
     line-height: 1.7em;
+    transition-delay: 600ms;
 }
 .home-img{
     width: 80%;
 }
 .home-para-div{
     width: 95%;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(+300px);
+    /* filter: blur(5px); */
+}
+.show{
+    opacity: 1;
+    /* filter: blur(0); */
+    transform: translateY(0);
+}
+.hidden-left{
+    opacity: 0;
+    transition: all 800ms;
+    transform: translateX(-100%);
+}
+.show-left{
+    opacity: 1;
+    /* filter: blur(0); */
+    transform: translateX(0);
+}
+.respawn-heading{
+    transition-delay: 200ms;
 }
 
 @media screen and (min-width: 768px){

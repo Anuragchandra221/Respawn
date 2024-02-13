@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../Components/Navbar'
 import Division from '../Components/Division'
 import Highlights from '../Components/Highlights'
@@ -10,6 +10,35 @@ import Footer from '../Components/Footer'
 import "./Home.css"
 
 function Home() {
+
+    useEffect(()=>{
+        const observer = new IntersectionObserver((entries)=>{
+          entries.forEach((entry)=>{
+            if(entry.isIntersecting){
+              entry.target.classList.add('show')
+            }else{
+              entry.target.classList.remove('show')
+            }
+          })
+        },[])
+        const observerLeft = new IntersectionObserver((entries)=>{
+          entries.forEach((entry)=>{
+            if(entry.isIntersecting){
+              entry.target.classList.add('show-left')
+            }else{
+              entry.target.classList.remove('show-left')
+            }
+          })
+        },[])
+      
+        const hiddenElements = document.querySelectorAll('.hidden')
+        const hiddenElementsLeft = document.querySelectorAll('.hidden-left')
+        hiddenElements.forEach((el)=> observer.observe(el))
+        hiddenElementsLeft.forEach((el)=> observerLeft.observe(el))
+      })
+
+
+    
   return (
     <div className='respawn'>
         {/* <div className='backgound-respawn'></div> */}
@@ -23,10 +52,10 @@ function Home() {
             </div>
             <div className='d-flex col-12  col-lg-6 justify-content-center'>
                 <div className='d-flex pl-lg-3 flex-column align-items-center align-items-lg-start  respawn-second-div home-para-div'>
-                    <h2 className='mb-2'>RESPAWN'24</h2>
-                    <p className='sub-text mb-4'>PLAY, SLAY, REPEAT</p>
-                    <p className='text-left para mb-4'>"Unlock the thrill of intense gaming battles! Secure your spot by registering for the upcoming tournament and embrace the competition fever"</p>
-                    <button className='respawn-btn px-3 py-2'>Register Here</button>
+                    <h2 className='mb-2 hidden-left respawn-heading'>RESPAWN'24</h2>
+                    <p className='sub-text mb-4 hidden-left'>PLAY, SLAY, REPEAT</p>
+                    <p className='text-left para mb-4 hidden-left'>"Unlock the thrill of intense gaming battles! Secure your spot by registering for the upcoming tournament and embrace the competition fever"</p>
+                    <button className='respawn-btn px-3 py-2 hidden-left'>Register Here</button>
                 </div>
             </div>
         </div>
