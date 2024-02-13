@@ -6,6 +6,9 @@
     position: absolute;
     width: 100%;
     z-index: 1;
+    /* background-color: var(--background); */
+}
+#navbarTogglerDemo01{
     background-color: var(--background);
 }
 #navlink{

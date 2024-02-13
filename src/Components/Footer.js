@@ -28,7 +28,7 @@ function Footer() {
                 <p>PAST EVENTS</p>
             </div>
         </div>
-        <div className='footer-icon-div mt-4 mb-3 mx-auto d-flex justify-content-between'>
+        <div className='footer-icon-div mt-4 mb-0 mx-auto d-flex justify-content-between'>
             <p>&copy; RESPAWN 2024</p>
             <div className='mx-auto mx-lg-0'>
                 <a href='' className='mx-2'><i class="fa-brands fa-instagram"></i></a>

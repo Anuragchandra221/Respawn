@@ -61,9 +61,9 @@ function Home() {
         </div>
         <div className='py-lg-5'></div>
         <Division/>
-        <div className='py-lg-5'></div>
+        <div className='py-3 py-lg-5'></div>
         <Highlights/>
-        <div className='py-lg-5'></div>
+        <div className='py-3 py-lg-5'></div>
         <Sponsors/>
         <div className='py-lg-5'></div>
         <Footer/>
